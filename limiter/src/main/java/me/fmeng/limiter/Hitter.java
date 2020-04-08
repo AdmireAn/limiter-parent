@@ -5,7 +5,6 @@ import me.fmeng.limiter.infrastructure.hitter.ResourceBO;
 
 /**
  * 命中器, 判断请求是否命中一个限流器的限流策略
- *
  * @author fmeng
  * @since 2018/07/27
  */
