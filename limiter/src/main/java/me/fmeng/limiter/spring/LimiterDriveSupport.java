@@ -70,7 +70,7 @@ public class LimiterDriveSupport implements InitializingBean {
                 handledLimiterMillisecondsTemp += passMilliseconds;
                 if (handledLimiterMillisecondsTemp > limiterProperties.getAllLimiterTimeoutMilliseconds()) {
                     if (log.isDebugEnabled()) {
-                        log.debug("全局限流生效了, resourceBO={}， nowMilliseconds={}, passMilliseconds={}, limiterPassMilliseconds={}"
+                        log.debug("全局限流生效, resourceBO={}， nowMilliseconds={}, passMilliseconds={}, limiterPassMilliseconds={}"
                                 , resourceBO, System.currentTimeMillis(), handledLimiterMillisecondsTemp, limiterProperties.getAllLimiterTimeoutMilliseconds());
                     }
                     throw new LimiterException(limiterProperties.getExceptionMessage());
